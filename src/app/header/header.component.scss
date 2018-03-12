@@ -1,0 +1,75 @@
+/* Header */
+#main-header {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+
+
+    .main-logo-container,
+    .header-actions-container {
+        flex: 1;
+        margin: 0 2em;
+    }
+
+    .main-logo-container {
+        display: flex;
+        justify-content: flex-start;
+        .header-evrimagaci-logo {
+            text-decoration: none;
+            text-align: center;
+            position: relative;
+            bottom: 1px;
+            margin: 0;
+            .evrimagaci-logo {
+                margin: 0 .4em 0 0;
+                width: 40px;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .header-main-title {
+                text-align: center;
+                color: black;
+                display: inline-block;
+                font-size: 1.3em;
+                font-weight: 600;
+            }
+        }
+        .header-vertical-line {
+            background: #c2c2c2;
+            width: 1px;
+            align-self: center;
+            height: 25px;
+            margin: auto .8em;
+        }
+        .header-logo-slogan {
+            margin: .5em 0;
+            align-self: center;
+            color: #858585;
+            font-weight: 300;
+        }
+    }
+
+    .header-actions-container {
+        display: flex;
+        justify-content: flex-end;
+        .header-actions {
+            align-self: center;
+            a, i {
+                margin-left: 2em;
+                &:hover {
+                    color: rgb(68, 68, 68);
+                    cursor: pointer;
+                }
+            }
+            a {
+                color: black;
+                text-decoration: none;
+            }
+            i {
+                font-size: 1.1em;
+                font-size: black;
+            }
+        }
+    }
+}
