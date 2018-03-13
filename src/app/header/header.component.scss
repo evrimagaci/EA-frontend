@@ -26,6 +26,9 @@
                 position: relative;
                 top: 50%;
                 transform: translateY(-50%);
+                &:hover {
+                    opacity: .8;
+                }
             }
             .header-main-title {
                 text-align: center;
