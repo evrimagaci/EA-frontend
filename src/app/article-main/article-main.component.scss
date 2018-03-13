@@ -1,0 +1,71 @@
+// importing main styles.scss for color variables
+@import "../../styles.scss";
+
+a {
+    text-decoration: none;
+}
+
+.article-main {
+    width: 320px;
+    height: 380px;
+    height: 100%;
+    max-height: 100%;
+    padding: .5em;
+    display: inline-block;
+    background: #fff;
+    border-bottom: 7px solid #242529;
+    border-radius: 1px;
+    margin-right: 2em;
+    .article-main-image-container {
+        .article-main-image {
+            width: 100%;
+        }
+    }
+    .article-main-info-container {
+        margin: .3em 0 1em 0;
+        a, div, p {
+            margin: 0;
+        }
+
+        .article-tag {
+            text-decoration: none;
+            color: black;
+            font-size: .8em;
+            &:hover {
+                color: $evrim-menu-bg;
+            }
+        }
+
+        .article-info-vertical-line {
+            display: inline-block;
+            background: #c2c2c2;
+            width: 1px;
+            align-self: center;
+            height: 10px;
+            margin: auto .2em;
+        }
+
+        .article-info-date {
+            font-size: .8em;
+            color: #888888;
+            display: inline;
+        }
+    }
+
+    .article-main-title-container {
+        margin: 0;
+        .article-main-title {
+            margin: 0;
+            font-size: 1.3em;
+            color: #0f0f11;
+        }
+    }
+}
+
+a .article-main:hover .article-main-title {
+    color: #3a3c42;
+}
+
+a .article-main:hover {
+    border-color: $evrim-menu-bg;
+}

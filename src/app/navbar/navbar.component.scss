@@ -1,0 +1,107 @@
+// importing main styles.scss for color variables
+@import "../../styles.scss";
+
+// Navbar
+#main-navbar {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    z-index: 2222;
+    .site-navigation {
+        width: 100%;
+        font-size: .9em;
+        margin: 0;
+        font-weight: light;
+        .menu {
+            display: flex;
+            justify-content: space-between;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding-left: 0;
+        }
+        ul li {
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            background: #2e2e2e;
+            border-left: 1px solid #3d3d3d;
+            display: block;
+            float: left;
+            margin: 0 0 0 0;
+            padding: .7em .5em;
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+            &:hover {
+                transition: background 0.01s ease;
+                cursor: pointer;    
+            }
+        }
+        ul li a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+        }
+    }
+    .site-navigation ul li ul {
+        background: #4b4b4b;
+        visibility: hidden;
+        text-align: left;
+        width: 100%;
+        position: absolute;
+        transition: visibility 0.01s ease-in;
+        margin-top:10px;
+        padding-left: .2em;
+        left: 0;
+        z-index: 999;
+    }
+
+    .site-navigation ul li ul a {
+        color: #e4e4e4;
+        padding: .2em 0;
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    .site-navigation ul li:hover > ul,
+    .site-navigation ul li ul:hover {
+        visibility: visible;
+    }
+    .site-navigation ul li ul li {
+        text-align: left;
+        padding: 5px 0 5px 5px;
+        width: 100%;
+    }
+    .site-navigation ul li ul li:hover {
+        background: #4b4b4b;
+        color: rgb(192, 192, 192);
+    }
+}
+
+#main-navbar .site-navigation .menu .menu-item-icerik:hover {
+    background: $icerik-menu-bg;
+}
+
+#main-navbar .site-navigation .menu .menu-item-evrim:hover {
+    background: $evrim-menu-bg;
+}
+
+#main-navbar .site-navigation .menu .menu-item-biyoloji:hover {
+    background: $biyoloji-menu-bg;
+}
+
+#main-navbar .site-navigation .menu .menu-item-fizik:hover {
+    background: $fizik-menu-bg;
+}
+
+#main-navbar .site-navigation .menu .menu-item-kimya:hover {
+    background: $kimya-menu-bg;
+}
+
+#main-navbar .site-navigation .menu .menu-item-yapayzeka:hover {
+    background: $yapayzeka-menu-bg;
+}
+

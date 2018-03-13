@@ -1,0 +1,126 @@
+// importing main styles.scss for color variables
+@import "../../styles.scss";
+
+#article-full-page {
+    background: #fcffff;
+    .article-full-title {
+        width: 80%;
+        margin: 0 auto 0 auto;
+        padding: 3em 0 .2em 0;
+        text-align: center;
+        font-size: 1.3em;
+    }
+    .article-full-info-container {
+        width: 80%;
+        margin: 2em auto;
+        display: flex;
+        justify-content: space-between;
+        .article-full-info-box {
+            flex: 1;
+            // border: 1px solid #e7e7e7;
+        }
+        .article-full-info-author {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            div {
+                
+                img {
+                    width: 60px;
+                    border-radius: 100%;
+                }
+            }
+            a {
+                color: black;
+                align-self: center;
+            }
+        }
+
+        .article-full-info-tag {
+            display: flex;
+            a {
+                margin: 0 auto;
+                align-self: center;
+                color: black;
+                &:hover {
+                    color: $evrim-menu-bg;
+                }
+            }
+        }
+
+        .article-full-info-date {
+            display: flex;
+            p {
+                margin: 0 auto;
+                align-self: center;
+                color: #616161;
+            }
+        }
+
+        .article-full-info-length {
+            display: flex;
+            p {
+                margin: 0 auto;
+                align-self: center;
+                span {
+                    color: #5e5e5e;
+                }
+            }
+        }
+
+        .article-full-info-actions {
+            display: flex;
+            i {
+                margin-left: 7em;
+                align-self: center;
+                font-size: 1.3em;
+                cursor: pointer;
+                &:hover {
+                    color: $evrim-menu-bg;
+                }
+            }
+        }
+
+
+
+        .header-vertical-line {
+            background: #c2c2c2;
+            width: 1px;
+            align-self: center;
+            height: 20px;
+            margin: auto .8em;
+        }
+    }
+
+    .article-full-image-container {
+        margin: 5em auto 3em auto;
+        width: 80%;
+        img {
+            width: 100%;
+        }
+    }
+    
+    .article-full-content-container {
+        margin: 1em 0;
+        p {
+            color: rgb(54, 54, 54);
+            font-family: 'Source Sans Pro';
+            margin: 0 auto;
+            font-size: 1.1em;
+            width: 70%;
+            line-height: 1.3;
+            word-spacing: 1px;
+        }
+    }
+}
+
+
+.article-full-hr {
+    width: 80%;
+    opacity: .2;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
