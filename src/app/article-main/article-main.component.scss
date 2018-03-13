@@ -65,3 +65,7 @@ a {
 a .article-main:hover .article-main-title {
     color: #3a3c42;
 }
+
+a .article-main:hover {
+    border-color: $evrim-menu-bg;
+}
