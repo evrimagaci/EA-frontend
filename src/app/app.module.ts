@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ArticleMainComponent } from './article-main/article-main.component';
 import { ArticleFullComponent } from './article-full/article-full.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ArticleFullComponent } from './article-full/article-full.component';
     HeaderComponent,
     NavbarComponent,
     ArticleMainComponent,
-    ArticleFullComponent
+    ArticleFullComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

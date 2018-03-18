@@ -1,5 +1,5 @@
-// importing main styles.scss for color variables
-@import "../../styles.scss";
+// importing color variables
+@import "../../__colors.scss";
 
 // Navbar
 #main-navbar {
@@ -25,7 +25,7 @@
             width: 100%;
             text-align: center;
             color: #fff;
-            background: #2e2e2e;
+            background: $dark-grey;
             border-left: 1px solid #3d3d3d;
             display: block;
             float: left;
