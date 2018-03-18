@@ -1,5 +1,5 @@
-// importing main styles.scss for color variables
-@import "../../styles.scss";
+// importing color variables
+@import "../../__colors.scss";
 
 #article-full-page {
     background: #fcffff;
@@ -53,7 +53,7 @@
             p {
                 margin: 0 auto;
                 align-self: center;
-                color: #616161;
+                color: $light-grey;
             }
         }
 
@@ -63,7 +63,7 @@
                 margin: 0 auto;
                 align-self: center;
                 span {
-                    color: #5e5e5e;
+                    color: $light-grey;
                 }
             }
         }
@@ -103,7 +103,7 @@
     .article-full-content-container {
         margin: 1em 0;
         p {
-            color: rgb(54, 54, 54);
+            color: $mid-grey;
             font-family: 'Source Sans Pro';
             margin: 0 auto;
             font-size: 1.1em;

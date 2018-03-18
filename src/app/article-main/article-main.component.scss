@@ -1,5 +1,5 @@
-// importing main styles.scss for color variables
-@import "../../styles.scss";
+// importing color variables
+@import "../../__colors.scss";
 
 a {
     text-decoration: none;
@@ -13,7 +13,7 @@ a {
     padding: .5em;
     display: inline-block;
     background: #fff;
-    border-bottom: 7px solid #242529;
+    border-bottom: 7px solid $dark-grey;
     border-radius: 1px;
     margin-right: 2em;
     .article-main-image-container {
@@ -47,7 +47,7 @@ a {
 
         .article-info-date {
             font-size: .8em;
-            color: #888888;
+            color: $light-grey;
             display: inline;
         }
     }
