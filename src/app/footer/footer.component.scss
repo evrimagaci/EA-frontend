@@ -1,0 +1,24 @@
+// importing color variables
+@import "../../__colors.scss";
+
+footer {
+    width: 100%;
+    height: 100%;
+    background: #f7f3f4;
+    margin: 0;
+    padding: 1em 0;
+    .container {
+
+    }
+    .footer-bottom {
+        p {
+            color: $mid-grey;
+            a {
+                color: black;
+                &:hover {
+                    color: $evrimagaci-red;
+                }
+            }
+        }
+    }
+}
