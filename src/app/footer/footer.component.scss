@@ -10,12 +10,37 @@ footer {
     .container {
 
     }
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        .footer-top-menu {
+            a {
+                margin-right: 1em;
+                font-weight: 500;
+                text-decoration: none;
+                color: $mid-grey;
+            }
+        }
+
+        .footer-top-social {
+            a {
+                margin-right: .1em;
+                color: $mid-grey;
+            }
+        }
+    }
+    hr {
+        opacity: .1;
+    }
     .footer-bottom {
         p {
             color: $mid-grey;
             a {
                 color: black;
+                font-weight: 500;
+                text-decoration: none;
                 &:hover {
+                    text-decoration: underline;
                     color: $evrimagaci-red;
                 }
             }
