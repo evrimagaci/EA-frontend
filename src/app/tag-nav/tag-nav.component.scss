@@ -1,0 +1,69 @@
+// importing color variables
+@import "../../__colors.scss";
+
+#tag-nav-section {
+    margin: 3em 0 1em 0;
+    .container .tags-nav-container {
+        display: flex;
+        justify-content: space-between;
+        .tag-nav {
+            width: 100%;
+            padding: .2em 1em;
+            margin: 0 .5em;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 1px;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+            border: 1px solid $dark-grey;
+            transition: transform .3s ease;
+            &:hover {
+                // transform: scale(1.02);
+                border: 1px solid $evrimagaci-red;
+            }
+            &:active {
+                transform: scale(.98);
+            }
+            p {
+                color: #fff;
+                font-weight: 500;
+                position: relative;
+                z-index: 33;
+            }
+            // color overlay
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: #1f1e24;
+                opacity: .7;
+                z-index: 0;
+            }
+        }
+        .tag-nav-astronomi {
+            background: url('./../../assets/image/galaxy.jpg');
+        }
+        .tag-nav-evrimselbiyoloji {
+            background: url('./../../assets/image/dna-blue.jpg');
+        }
+        .tag-nav-cografya {
+            background: url('./../../assets/image/mountain.jpeg');
+        }
+        .tag-nav-yapayzeka {
+            background: url('./../../assets/image/robot.jpg');
+        }
+
+        .tag-nav-evrimselbiyoloji,
+        .tag-nav-astronomi,
+        .tag-nav-cografya,
+        .tag-nav-yapayzeka {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+}

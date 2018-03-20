@@ -9,6 +9,7 @@ import { ArticleMainComponent } from './article-main/article-main.component';
 import { ArticleFullComponent } from './article-full/article-full.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
+import { TagNavComponent } from './tag-nav/tag-nav.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ContactComponent } from './contact/contact.component';
     ArticleMainComponent,
     ArticleFullComponent,
     FooterComponent,
-    ContactComponent
+    ContactComponent,
+    TagNavComponent
   ],
   imports: [
     BrowserModule,
