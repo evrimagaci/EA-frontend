@@ -1,0 +1,46 @@
+// importing color variables
+@import "../../__colors.scss";
+
+#contact-section {
+    margin: 3em 0;
+    .contact-form {
+        
+    }
+    .contact-form form {
+        label {
+            font-weight: 500;
+            display: block;
+        }
+        input, textarea {
+            padding: .4em .3em;
+            margin: .3em 0 0 0;
+            border: 1px solid $border-grey;
+            border-radius: 2px;
+            outline: none;
+            background: #fff;
+            font-family: 'Source Sans Pro';
+            &:hover, &:focus {
+                border: 1px solid #aaaaaa;
+                border: 1px solid $evrim-menu-bg;
+                background: $bg-grey;
+            }
+        }
+        br {
+            margin: 2em 0;
+        }
+        .form-group {
+            display: inline-block;
+            margin-right: .4em;
+        }
+        .form-group-inline {
+            display: block;
+            textarea {
+                width: 650px;
+                height: 200px;
+            }
+        }
+        button {
+            margin: 1em 0 0 0;
+        }
+    }
+}

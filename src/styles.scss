@@ -1,3 +1,9 @@
+// importing color variables
+@import "./__colors.scss";
+
+
+
+
 /* ==========================================================================
    Global
    ========================================================================== */
@@ -15,4 +21,26 @@ body {
 .container {
     width: 92%;
     margin: 0 auto;
+}
+
+.button {
+    padding: .5em 1.3em;
+    background: none;
+    outline: none;
+    font-weight: 500;
+    border-radius: 2px;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+.button-primary {
+    color: $mid-grey;
+    background: #ececec;
+    border: 1px solid $border-grey;
+    &:hover {
+        color: $dark-grey;
+        color: $evrimagaci-red;
+        background: #ececec;
+        border: 1px solid $evrimagaci-red;
+    }
 }
