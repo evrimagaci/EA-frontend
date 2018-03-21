@@ -1,0 +1,44 @@
+<div class="home-sign-form">
+  <!-- Sign up form  -->
+  <form id="sign-up-form" *ngIf="showSignUpForm">
+
+    <h2>Kayıt</h2>
+    <input id="form-fullname" type="text" placeholder="Ad & Soyad" required>
+    <input id="form-email" type="email" placeholder="E-Posta" required>
+    <input id="form-password" type="password" placeholder="Şifre" required>
+    <input id="form-password-repeat" type="password" placeholder="Şifre Tekrar" required>
+
+    <input id="form-checkbox-newsletter" type="checkbox" name="form-sign-checkbox" value="form-checkbox-newsletter">
+    <label class="form-sign-checkbox-label" for="form-checkbox-newsletter">Haber bültenine abone olmak istiyorum</label>
+    <input id="form-checkbox-terms" type="checkbox" name="form-sign-terms" value="form-checkbox-terms">
+    <label class="form-sign-checkbox-label" for="form-checkbox-terms"><a href="#">Kullanıcı Sözleşmesi</a>'ni okudum ve kabul ediyorum</label>
+    
+    <div class="sign-form-buttons">
+      <button class="button button-primary" type="submit">Kayıt Yap</button>
+      <p>Ya da</p>
+      <a class="button button-primary button-facebook"><i class="fab fa-facebook"></i> Facebook İle Kayıt Ol</a>
+      <a class="button button-primary button-google"><i class="fab fa-google"></i> Google İle Kayıt Ol</a>
+      <div class="sign-actions-links">
+        <a class="sign-action" id="sign-in-action" (click)="showSignInForm = true" href="">Hesabınız var mı? Giriş yap</a>
+      </div>
+    </div>
+
+  </form>
+  <!-- Sign in form  -->
+  <form id="sign-in-form" *ngIf="showSignInForm">
+    <h2>Giriş</h2>
+    <input id="form-email" type="email" placeholder="E-Posta" required>
+    <input id="form-password" type="password" placeholder="Şifre" required>
+    <div class="sign-form-buttons">
+      <button class="button button-primary" type="submit">Giriş Yap</button>
+      <p>Ya da</p>
+      <a class="button button-primary button-facebook"><i class="fab fa-facebook"></i> Facebook İle Giriş Yap</a>
+      <a class="button button-primary button-google"><i class="fab fa-google"></i> Google İle Giriş Yap</a>
+      <div class="sign-actions-links">
+        <a class="sign-action" id="sign-up-action" (click)="showSignUpForm = true" href="">Hesabınız yok mu? Kayıt ol</a>
+        <a class="sign-action" id="sign-in-forgotpassword" href="#">Şifremi unuttum</a>
+        <a class="sign-action" id="sign-in-membershipactivation" href="#">Üyelik aktivasyonu</a>
+      </div>
+    </div>
+  </form>
+</div>

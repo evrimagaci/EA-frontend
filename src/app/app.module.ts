@@ -10,6 +10,7 @@ import { ArticleFullComponent } from './article-full/article-full.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { TagNavComponent } from './tag-nav/tag-nav.component';
+import { SignFormComponent } from './sign-form/sign-form.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { TagNavComponent } from './tag-nav/tag-nav.component';
     ArticleFullComponent,
     FooterComponent,
     ContactComponent,
-    TagNavComponent
+    TagNavComponent,
+    SignFormComponent
   ],
   imports: [
     BrowserModule,

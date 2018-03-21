@@ -1,0 +1,195 @@
+// importing color variables
+@import "../../__colors.scss";
+
+
+
+.home-sign-form {
+    border: 1px solid black;
+    max-width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: rgba(156, 156, 156, 0.295);
+    padding: 2em 1em 0 1em;
+    margin: 0 auto;
+    z-index: 223;
+    #sign-in-form {
+        display: block;
+    }
+    #sign-up-form,
+    #sign-in-form {
+        width: 500px;
+        font-weight: 500;
+        padding: 2em 1em;
+        margin: 3em auto;
+        flex-basis: 40%;
+        background: $bg-grey;
+        border-radius: 2px;
+        h2 {
+            margin-top: 0;
+            color: $dark-grey;
+            text-align: left;
+        }
+        input {
+            display: block;
+            width: 100%;
+            padding: .6em .4em;
+            font-size: 1em;
+            margin: .3em 0 0 0;
+            font-family: 'Source Sans Pro';
+            border: 1px solid $border-grey;
+            border-radius: 2px;
+            appearance: none;
+            &:hover, &:focus {
+                border: 1px solid #aaaaaa;
+            }
+            &:hover {
+                background: $bg-grey;
+            }
+        }
+        label {
+            font-size: 12px;
+            font-weight: 400;
+            color: $mid-grey;
+        }
+        [type="checkbox"]:checked,
+        [type="checkbox"]:not(:checked) {
+            position: absolute;
+            left: -9999px;
+        }
+        [type="checkbox"]:checked + label,
+        [type="checkbox"]:not(:checked) + label {
+            position: relative;
+            padding-left: 2em;
+            margin: .8em 0;
+            text-align: left;
+            cursor: pointer;
+            display: block;
+            color: $mid-grey;
+        }
+        [type="checkbox"]:checked + label:before,
+        [type="checkbox"]:not(:checked) + label:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 14px;
+            height: 14px;
+            border: 1px solid #ddd;
+            // border-radius: 100%;
+            background: #fff;
+        }
+        [type="checkbox"]:checked + label:after,
+        [type="checkbox"]:not(:checked) + label:after {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: $evrimagaci-red;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            // border-radius: 100%;
+            transition: all 0.02s ease;
+        }
+        [type="checkbox"]:not(:checked) + label:after {
+            opacity: 0;
+            transform: scale(0);
+        }
+        [type="checkbox"]:checked + label:after {
+            opacity: 1;
+            transform: scale(1);
+        }
+        input[placeholder] {
+            color: $mid-grey;
+        }
+
+ 
+        p {
+            overflow: hidden;
+            text-align: center;
+            color: #8a8a8a;;
+            font-size: .9em;
+            &:before,
+            &:after {
+                background: #000;
+                content: "";
+                display: inline-block;
+                height: 1px;
+                position: relative;
+                vertical-align: middle;
+                width: 50%;
+                opacity: .1;
+            }
+            &:before {
+                right: 0.5em;
+                margin-left: -50%;
+            }
+            &:after {
+                left: 0.5em;
+                margin-right: -50%;
+            }
+        }
+
+
+        .sign-form-buttons {
+            .button-primary {
+                margin: 1em 0 0 0;
+                padding: .7em .6em;
+                width: 100%;
+                user-select: none;
+            }
+            .button-facebook,
+            .button-google {
+                display: block;
+                color: #fff;
+                font-weight: 400;
+                width: 100%;
+                padding: .7em .6em;
+                margin: .4em 0;
+                text-align: center;
+                user-select: none;
+                i {
+                    margin-right: .2em;
+                }
+            }
+            .button-facebook {
+                background: #3b5998;
+            }
+            .button-google {
+                background: #4285f4;
+            }
+        }
+
+        .sign-actions-links {
+
+            .sign-action {
+                margin: 0 .7em 0 0;
+                text-decoration: none;
+                font-weight: 400;
+                color: $mid-grey;
+                font-size: .8em;
+                user-select: none;
+                &:hover {
+                    text-decoration: underline;
+                    color: $evrimagaci-red;
+                }
+            }
+        }
+
+        .form-sign-checkbox-label {
+            font-size: .9em;
+            color: $light-grey;
+            user-select: none;
+            a {
+                text-decoration: none;
+                font-weight: 500;
+                color: $dark-grey;
+                &:hover {
+                    color: $evrimagaci-red;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+
+    }
+}

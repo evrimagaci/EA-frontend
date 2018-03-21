@@ -12,7 +12,8 @@
             display: block;
         }
         input, textarea {
-            padding: .4em .3em;
+            padding: .6em .4em;
+            font-size: 1em;
             margin: .3em 0 0 0;
             border: 1px solid $border-grey;
             border-radius: 2px;
@@ -21,7 +22,8 @@
             font-family: 'Source Sans Pro';
             &:hover, &:focus {
                 border: 1px solid #aaaaaa;
-                border: 1px solid $evrim-menu-bg;
+            }
+            &:hover {
                 background: $bg-grey;
             }
         }
