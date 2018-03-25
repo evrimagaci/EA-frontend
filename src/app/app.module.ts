@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { TagNavComponent } from './tag-nav/tag-nav.component';
 import { SignFormComponent } from './sign-form/sign-form.component';
+import { UserComponent } from './user/user.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { SignFormComponent } from './sign-form/sign-form.component';
     FooterComponent,
     ContactComponent,
     TagNavComponent,
-    SignFormComponent
+    SignFormComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
