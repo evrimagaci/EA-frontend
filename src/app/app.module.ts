@@ -12,6 +12,7 @@ import { ContactComponent } from './contact/contact.component';
 import { TagNavComponent } from './tag-nav/tag-nav.component';
 import { SignFormComponent } from './sign-form/sign-form.component';
 import { UserComponent } from './user/user.component';
+import { SearchComponent } from './search/search.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { UserComponent } from './user/user.component';
     ContactComponent,
     TagNavComponent,
     SignFormComponent,
-    UserComponent
+    UserComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
