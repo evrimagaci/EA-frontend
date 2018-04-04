@@ -13,6 +13,7 @@ import { TagNavComponent } from './tag-nav/tag-nav.component';
 import { SignFormComponent } from './sign-form/sign-form.component';
 import { UserComponent } from './user/user.component';
 import { SearchComponent } from './search/search.component';
+import { DonationComponent } from './donation/donation.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { SearchComponent } from './search/search.component';
     TagNavComponent,
     SignFormComponent,
     UserComponent,
-    SearchComponent
+    SearchComponent,
+    DonationComponent
   ],
   imports: [
     BrowserModule,
