@@ -8,6 +8,7 @@
     .container {
         display: flex;
         justify-content: space-between;
+        flex-direction: column;
         padding: 1em 0;
 
         #user-info, #user-activity {
@@ -20,31 +21,32 @@
 
         #user-info {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: space-between;
             .user-profile {
                 display: flex;
                 justify-content: space-between;
-                border-bottom: 1px solid #dadada;
-                height: 65px;
+                flex-basis: 50%;
                 .user-profile-image {
-                    flex-basis: 10%;
+                    border: 1px solid blue;
+                    flex-basis: 40%;
                     img {
-                        max-width: 60px;
+                        max-width: 100%;
                         border-radius: 4px;
                     }
                 }
                 .user-profile-name {
-                    flex-basis: 90%;
+                    flex-basis: 60%;
+                    border: 1px solid green;
                     h1 {
-                        align-self: center;
-                        padding-left: 1em;
                         font-size: 1.3em;
+                        padding-left: 1em;
                     }
                 }
             }
 
             .user-informations {
+                flex-basis: 50%;
                 p {
                     font-weight: 600;
                     span {
