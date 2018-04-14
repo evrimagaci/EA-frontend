@@ -61,10 +61,17 @@
                 flex-basis: 50%;
                 p {
                     font-weight: 600;
+                    font-size: 1.1em;
                     span {
                         font-weight: normal;
                         display: inline;
                         color: #363636;
+                    }
+                    i {
+                        width: 55px;
+                        margin: 0 auto;
+                        text-align: center;
+                        font-size: 1.4em;
                     }
                 }
             }
