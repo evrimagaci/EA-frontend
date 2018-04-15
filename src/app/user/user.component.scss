@@ -36,23 +36,31 @@
                 }
                 .user-profile-name {
                     flex-basis: 60%;
+                    margin-left: 1.5em;
                     h1 {
                         font-size: 2em;
                         font-weight: 500;
-                        padding-left: 1em;
+                        margin-bottom: 0;
+                    }
+                    p {
+                        margin-bottom: 1.3em;
+                        margin-top: .3em;
+                        color: #464646;
                     }
                     .user-profile-socials {
-                        padding-left: 1.8em;
                         a {
                             text-decoration: none;
                         }
                         a i {
-                            color: $mid-grey;
-                            margin: .2em;
+                            color: #464646;
+                            margin-right: .4em;
                             &:hover {
                                 color: $evrimagaci-red;
                             }
                         }
+                    }
+                    .user-profile-action-buttons {
+                        margin-top: 2em;
                     }
                 }
             }
@@ -64,8 +72,8 @@
                     font-size: 1.1em;
                     span {
                         font-weight: normal;
-                        display: inline;
                         color: #363636;
+                        display: inline;
                     }
                     i {
                         width: 55px;
@@ -80,19 +88,24 @@
         #user-activity {
             margin-top: 2em;
             #activity-menu-tab {
-                border: 1px solid $mid-grey;
+                // border: 1px solid $mid-grey;
                 ul {
                     display: flex;
                     justify-content: space-between;
+                    padding: 0;
                     li {
                         flex: 1;
                         list-style: none;
-                        padding: .3em .4em;
-                        margin: 0 .1em;
+                        // padding: .3em 1em;
+                        padding-bottom: .6em;
+                        margin: 0 auto;
+                        text-align: center;
+                        border-bottom: 2px solid rgba(0, 0, 0, 1);
                         cursor: pointer;
                         &:hover {
                             color: $evrimagaci-red;
-                            text-decoration: underline;
+                            border-bottom: 2px solid $evrimagaci-red;
+                            // text-decoration: underline;
                         }
                     }
                 }
