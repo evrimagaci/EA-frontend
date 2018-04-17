@@ -14,7 +14,7 @@ import { SignFormComponent } from './sign-form/sign-form.component';
 import { UserComponent } from './user/user.component';
 import { SearchComponent } from './search/search.component';
 import { DonationComponent } from './donation/donation.component';
-
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -33,9 +33,7 @@ import { DonationComponent } from './donation/donation.component';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([
-      { path: 'article', component: ArticleFullComponent }
-    ])
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
