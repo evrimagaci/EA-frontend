@@ -1,0 +1,38 @@
+// Home Page
+#home-page {
+    width: 100%;
+    height: 90vh;
+    margin: 0;
+    padding: 0;
+    background: url('./../../assets/image/home-background-image.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    // Dark color overlay
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: #080502;
+        opacity: .92;
+        z-index: 0;
+    }
+
+    .home-page-content {
+        margin: 0 auto;
+        padding: 2em 0;
+        position: relative;
+        z-index: 111;
+        p {
+            width: 130px;
+            margin: 0;
+            font-weight: 500;
+            color: #242529;
+            background: #fff;
+            padding: .2em .4em;
+        }
+    }
+}
