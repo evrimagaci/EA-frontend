@@ -15,6 +15,7 @@ import { SearchComponent } from './search/search.component';
 import { DonationComponent } from './donation/donation.component';
 
 import { AppRoutingModule } from './app-routing.module';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { AppRoutingModule } from './app-routing.module';
     SignFormComponent,
     UserComponent,
     SearchComponent,
-    DonationComponent
+    DonationComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
