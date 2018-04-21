@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -14,6 +13,7 @@ import { SignFormComponent } from './sign-form/sign-form.component';
 import { UserComponent } from './user/user.component';
 import { SearchComponent } from './search/search.component';
 import { DonationComponent } from './donation/donation.component';
+
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({

@@ -4,13 +4,13 @@ import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
-    { path: '', component: AppComponent },
     { path: 'home', component: AppComponent },
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'contact', component: ContactComponent }
 ]
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes, { })],
+    imports: [RouterModule.forRoot(routes)],
     exports: [RouterModule]
 })
 
