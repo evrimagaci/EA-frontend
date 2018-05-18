@@ -7,14 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignFormComponent implements OnInit {
 
-  showSignInForm: boolean = true;
-  showSignUpForm: boolean = false;
+  showSignInFormState: boolean = true;
+  showSignUpFormState: boolean = false;
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  
+  showSignUpForm() {
+    this.showSignInFormState = false;
+    this.showSignUpFormState = true;
+  }
+
+  showSignInForm() {
+    this.showSignUpFormState = false;
+    this.showSignInFormState = true;
+  }
 
 }

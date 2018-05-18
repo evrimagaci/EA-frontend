@@ -13,10 +13,10 @@ import { SignFormComponent } from './sign-form/sign-form.component';
 import { UserComponent } from './user/user.component';
 import { SearchComponent } from './search/search.component';
 import { DonationComponent } from './donation/donation.component';
-
-import { AppRoutingModule } from './app-routing.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home.component';
+
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
