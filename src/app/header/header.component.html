@@ -11,13 +11,14 @@
 
   <div class="header-actions-container">
     <div class="header-actions">
-        <a [routerLink]="['/home']">ANASAYFA</a>
-        <a [routerLink]="['/contact']">İLETİŞİM</a>
-        <a [routerLink]="['/sign']">GİRİŞ</a>
+      <a [routerLink]="['/home']">ANASAYFA</a>
+      <a [routerLink]="['/contact']">İLETİŞİM</a>
+      <a [routerLink]="['/sign']">GİRİŞ</a>
 
-        <a [routerLink]="['/article']">ARTICLE</a>
+      <a [routerLink]="['/article']">ARTICLE</a>
 
-        <i class="fa fa-search"></i>
+      <i class="fa fa-search" *ngIf="!searchIsActive" [routerLink]="['/search']"></i>
+      <i class="far fa-times-circle" *ngIf="searchIsActive" (click)="searchClickGoBack()"></i>
     </div>
   </div>
 

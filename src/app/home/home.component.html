@@ -1,8 +1,30 @@
 <div id="home-page">
-  <div class="home-page-content container">
+  <div class="home-page-hero-content container">
       <p>Güncel Makaleler:</p>
       <app-article-main></app-article-main>
       <br>
       <app-tag-nav></app-tag-nav>
+  </div>
+</div>
+<div id="recent-articles">
+  <div class="articles-main-title-container">
+      <h3>En Son Makaleler</h3>
+  </div>
+  <div class="container articles-container">
+
+    <div class="article-main" *ngFor="let article of articles" [routerLink]="['/article', article.id, article.articleTitle]">
+      <div class="article-main-image-container">
+        <img [src]="article.articlePictures.articleMainPicture" alt="" class="article-main-image">
+      </div>
+      <div class="article-main-info-container">
+        <a class="article-tag" href="#">EVRİMSEL BİYOLOJİ</a>
+        <div class="article-info-vertical-line"></div>
+        <p class="article-info-date">{{article.articleMadeDate}}</p>
+      </div>
+      <div class="article-main-title-container">
+        <h1 class="article-main-title">{{article.articleTitle}}</h1>
+      </div>
+    </div>
+
   </div>
 </div>

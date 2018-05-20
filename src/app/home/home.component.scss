@@ -1,3 +1,6 @@
+// importing color variables
+@import "../../__colors.scss";
+
 // Home Page
 #home-page {
     width: 100%;
@@ -21,7 +24,7 @@
         z-index: 0;
     }
 
-    .home-page-content {
+    .home-page-hero-content {
         margin: 0 auto;
         padding: 2em 0;
         position: relative;
@@ -35,4 +38,99 @@
             padding: .2em .4em;
         }
     }
+
+}
+
+#recent-articles {
+    background: rgba(192, 192, 192, 0.295);
+    padding: 1em 0;
+    .articles-main-title-container {
+        width: 74%;
+        margin: 1em auto;
+        background: #fafafa;
+        padding: .5em;
+        border: 1px solid #e0e0e0;
+        h3 {
+            margin: 0;
+            font-weight: normal;
+        }
+    }
+    .articles-container {
+        width: 75%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+    
+    .articles-container .article-main {
+        width: 320px;
+        height: 100%;
+        max-height: 100%;
+        padding: .5em;
+        display: block;
+        background: $bg-grey;
+        border-bottom: 4px solid $dark-grey;
+        border-radius: 1px;
+        margin: .5em auto;
+        transition: box-shadow .1s ease;
+        &:hover {
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.10);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.10);
+            box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.10);
+            border-bottom-color: $evrim-menu-bg;
+            cursor: pointer;
+        }
+        &:hover .article-main-title-container .article-main-title {
+            color: #3a3c42;
+        }
+        // &:hover .article-main-image-container img {
+        //     opacity: .95;
+        // }
+        .article-main-image-container {
+            .article-main-image {
+                width: 100%;
+            }
+        }
+        .article-main-info-container {
+            margin: .3em 0 1em 0;
+            a, div, p {
+                margin: 0;
+            }
+    
+            .article-tag {
+                text-decoration: none;
+                color: black;
+                font-size: .8em;
+                &:hover {
+                    color: $evrim-menu-bg;
+                }
+            }
+    
+            .article-info-vertical-line {
+                display: inline-block;
+                background: #c2c2c2;
+                width: 1px;
+                align-self: center;
+                height: 10px;
+                margin: auto .2em;
+            }
+    
+            .article-info-date {
+                font-size: .8em;
+                color: $light-grey;
+                display: inline;
+            }
+        }
+    
+        .article-main-title-container {
+            margin: 0;
+            .article-main-title {
+                margin: 0;
+                font-size: 1.3em;
+                color: #0f0f11;
+            }
+        }
+    }
+    
 }
