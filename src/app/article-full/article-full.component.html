@@ -4,7 +4,7 @@
 <div id="article-full-page">
   <div class="container">
     <div class="article-full-title">
-      <h1>Kazık Dişli Erken Memeli Fosil Buluntusu, Memelilerin Erken Evrimini 60 Milyon Yıl Geriye Kaydırdı</h1>
+      <h1>{{currentArticle.articleTitle}}</h1>
     </div>
     <hr class="article-full-hr">
     <div class="article-full-info-container">
@@ -40,7 +40,7 @@
       </div>
     </div>
     <div class="article-full-image-container">
-      <img src="./../../assets/image/article-image2.jpg" alt="" class="article-full-image">
+      <img [src]="currentArticle.articlePictures.articleMainPicture" alt="" class="article-full-image">
     </div>
     <div class="article-full-content-container">
       <p class="article-full-content">
