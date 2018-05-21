@@ -12,7 +12,7 @@
   </div>
   <div class="container articles-container">
 
-    <div class="article-main" *ngFor="let article of articles" [routerLink]="['/article', article.id, article.articleTitle]">
+    <div class="article-main" *ngFor="let article of articles" [routerLink]="['/article', article.id, article.articleTitle | routerLowercasing]">
       <div class="article-main-image-container">
         <img [src]="article.articlePictures.articleMainPicture" alt="" class="article-main-image">
       </div>

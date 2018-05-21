@@ -18,6 +18,8 @@ import { DonationComponent } from './donation/donation.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home.component';
 
+import { RouterLowercasingPipe } from './core/router-lowercasing.pipe';
+
 import { DataService } from './core/data.service';
 
 @NgModule({
@@ -35,7 +37,8 @@ import { DataService } from './core/data.service';
     SearchComponent,
     DonationComponent,
     PageNotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    RouterLowercasingPipe
   ],
   imports: [
     BrowserModule,
