@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { RouterModule, ActivatedRoute } from '@angular/router';
 import { HeaderComponent } from './../header/header.component';
 import { NavbarComponent } from './../navbar/navbar.component';
@@ -16,12 +17,15 @@ export class ArticleFullComponent implements OnInit {
   articles;
   currentArticle;
 
-  constructor(private route: ActivatedRoute, private dataService: DataService) { }
+  constructor (private route: ActivatedRoute, private dataService: DataService, private titleService: Title) { }
 
   ngOnInit() {
     this.currentArticleId = +this.route.snapshot.paramMap.get('id');
     this.articles = this.dataService.getArticlesData()
     this.currentArticle = this.articles.find(item => item.id === this.currentArticleId);
+
+    // dynamic page title change
+    this.titleService.setTitle(`Evrim Ağacı - ${this.currentArticle.articleTitle}`);
   }
 
 } 
