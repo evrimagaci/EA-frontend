@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-sign-form',
@@ -10,9 +11,10 @@ export class SignFormComponent implements OnInit {
   showSignInFormState: boolean = true;
   showSignUpFormState: boolean = false;
 
-  constructor() { }
+  constructor(private titleService: Title) { }
 
   ngOnInit() {
+    this.titleService.setTitle(`Evrim Ağacı - ${this.showSignInForm ? 'Giriş Yap' : 'Kaydol'}`);
   }
 
   showSignUpForm() {
